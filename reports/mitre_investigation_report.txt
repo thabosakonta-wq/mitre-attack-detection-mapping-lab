@@ -1,0 +1,24 @@
+MITRE ATT&CK INVESTIGATION REPORT
+
+Findings:
+
+1. Brute Force Activity
+Technique: T1110
+
+2. Password Guessing
+Technique: T1110.001
+
+3. Suspicious Authentication Activity
+Technique: T1078
+
+4. Privilege Escalation
+Technique: T1068
+
+Risk Level: HIGH
+
+Recommendations:
+
+- Enable MFA
+- Block malicious IPs
+- Monitor failed login attempts
+- Review privileged account activity
