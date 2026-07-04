@@ -1,158 +1,176 @@
-MITRE ATT&CK Detection Mapping Lab
+# MITRE ATT&CK Mapping Lab
 
-A practical cybersecurity project demonstrating how security detections and threat hunting findings can be mapped to the MITRE ATT&CK Framework.
+A cybersecurity project demonstrating how Security Operations Center (SOC) analysts map detections, investigations, and threat hunting findings to the MITRE ATT&CK Framework to classify attacker behavior and improve detection coverage.
 
-Overview
+---
 
-This project simulates Security Operations Center (SOC) analyst activities by mapping security events, detections, and investigation findings to MITRE ATT&CK tactics and techniques.
+## Overview
 
-The lab demonstrates how analysts can use ATT&CK to classify threats, understand attacker behavior, prioritize investigations, and improve detection coverage.
+This project demonstrates how SOC analysts use the MITRE ATT&CK Framework to classify security events, document attacker techniques, support incident investigations, and improve detection engineering.
 
-Objectives
+The lab focuses on:
 
-- Understand the MITRE ATT&CK Framework
-- Map security events to ATT&CK techniques
-- Improve threat detection visibility
-- Support threat hunting investigations
-- Practice SOC analyst workflows
-- Document security findings using industry-recognized frameworks
+- Failed Login Mapping
+- Brute Force Mapping
+- Suspicious Authentication Activity
+- Privilege Escalation Mapping
+- Investigation Reporting
+- ATT&CK Technique Classification
 
-Features
+---
 
-Detection Mapping
+## Objectives
 
-Maps common security detections to ATT&CK techniques including:
+- Demonstrate MITRE ATT&CK mapping methodology.
+- Map common security detections to ATT&CK techniques.
+- Improve threat visibility.
+- Support incident investigations.
+- Produce professional SOC documentation.
+- Demonstrate ATT&CK knowledge expected of SOC Analysts.
 
-- Failed Login Detection
-- Brute Force Detection
-- Suspicious IP Activity
-- Privilege Escalation Activity
+---
 
-Investigation Reporting
+## Detection Coverage
 
-Documents findings, affected assets, risk levels, and recommended remediation actions.
+| Detection | ATT&CK Technique | Severity |
+|------------|------------------|----------|
+| Failed Login Detection | T1110 | Medium |
+| Password Guessing | T1110.001 | High |
+| Suspicious Authentication | T1078 | High |
+| Privilege Escalation | T1068 | High |
 
-Threat Classification
+---
 
-Uses ATT&CK techniques to classify suspicious activity and support incident investigations.
+## Reports
 
-MITRE ATT&CK Techniques Covered
-
-Technique ID| Technique
-T1110| Brute Force
-T1110.001| Password Guessing
-T1078| Valid Accounts
-T1068| Exploitation for Privilege Escalation
-
-Project Structure
-
-MITRE-Mapping-Lab/
-├── detections/
-├── mappings/
-│   └── mitre_mapping.md
-├── reports/
-│   └── mitre_investigation_report.txt
-├── screenshots/
-└── README.md
-
-Sample Detection Mapping
-
-Failed Login Detection
-
-Detection:
-Repeated SSH authentication failures.
-
-MITRE ATT&CK:
-
-- T1110 – Brute Force
-
-Severity:
-Medium
-
-Brute Force Detection
-
-Detection:
-Multiple failed login attempts from a single IP address.
-
-MITRE ATT&CK:
-
-- T1110.001 – Password Guessing
-
-Severity:
-High
-
-Suspicious IP Detection
-
-Detection:
-Known malicious IP observed in authentication logs.
-
-MITRE ATT&CK:
-
-- T1078 – Valid Accounts
-
-Severity:
-High
-
-Privilege Escalation Detection
-
-Detection:
-Creation of new privileged accounts and elevated commands.
-
-MITRE ATT&CK:
-
-- T1068 – Exploitation for Privilege Escalation
-
-Severity:
-High
-
-Skills Demonstrated
-
-- Threat Hunting
+- Executive Summary
+- MITRE Investigation Report
 - MITRE ATT&CK Mapping
-- Security Monitoring
-- Threat Detection
-- Incident Investigation
-- Log Analysis
-- Security Documentation
-- Cybersecurity Reporting
 
-Technologies Used
+---
 
-- Linux
-- Termux
-- Bash
-- Git
-- GitHub
-- MITRE ATT&CK Framework
+## Future Enhancements
 
-Learning Outcomes
-
-This project helped develop practical understanding of:
-
-- ATT&CK Tactics and Techniques
-- Detection Engineering Concepts
-- Threat Classification
-- Incident Response Processes
-- SOC Operations
-- Security Investigations
-
-Future Enhancements
-
-- ATT&CK Navigator Layer Creation
-- Sigma Rule Mapping
-- Wazuh Detection Integration
-- Sysmon Event Correlation
+- ATT&CK Navigator Layer
+- Sigma Rule Correlation
+- Microsoft Sentinel Integration
+- Microsoft Defender XDR Integration
+- Wazuh Integration
+- Sysmon Correlation
 - Threat Intelligence Enrichment
 - Automated ATT&CK Reporting
 
-Author
+---
 
-Thabo Sakonta
+## MITRE ATT&CK Coverage
+
+| Technique | ATT&CK ID | Description |
+|------------|-----------|-------------|
+| Brute Force | T1110 | Credential Access |
+| Password Guessing | T1110.001 | Credential Access |
+| Valid Accounts | T1078 | Defense Evasion / Persistence |
+| Exploitation for Privilege Escalation | T1068 | Privilege Escalation |
+
+---
+
+## Investigation Workflow
+
+Security Event
+
+↓
+
+Detection
+
+↓
+
+Threat Classification
+
+↓
+
+MITRE ATT&CK Mapping
+
+↓
+
+Investigation
+
+↓
+
+Incident Report
+
+↓
+
+Recommended Actions
+
+---
+
+## Screenshots
+
+### MITRE ATT&CK Mapping
+
+![MITRE Mapping](screenshots/mitre_mapping.png)
+
+---
+
+## Technologies Used
+
+- MITRE ATT&CK Framework
+- Bash
+- Linux
+- Termux
+- Git
+- GitHub
+- Detection Engineering
+- Threat Hunting
+- SOC Operations
+
+---
+
+## Project Structure
+
+```text
+MITRE-Mapping-Lab
+├── detections
+├── mappings
+│   └── mitre_mapping.md
+├── reports
+│   ├── executive_summary.md
+│   └── mitre_investigation_report.txt
+├── screenshots
+│   └── mitre_mapping.png
+└── README.md
+```
+
+---
+
+## Learning Outcomes
+
+- MITRE ATT&CK Mapping
+- Threat Classification
+- Detection Engineering
+- Threat Hunting
+- Incident Investigation
+- Security Monitoring
+- SOC Documentation
+
+---
+
+## Author
+
+**Thabo Sakonta**
 
 Microsoft Certified Security Operations Analyst (SC-200)
 
 GitHub:
 https://github.com/thabosakonta-wq
+
+LinkedIn:
+https://www.linkedin.com/in/thabo-sakonta-377a3748
+
+---
+
+## License
+
+This project is provided for educational and portfolio purposes.
 
 LinkedIn:
 https://www.linkedin.com/in/thabo-sakonta-377a3748
